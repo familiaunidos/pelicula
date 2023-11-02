@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+<!-- 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css"> -->
+    <link rel="stylesheet" href="estilo.css">
+
+    <title>Netflix</title>
+</head>
+<body id="body">
+
+       <div class="container-principal">    
+        <!-- MENU DE NAVEGACION  -->
+            <div class="menu">
+
+                <ul class="menu-ul">
+                    <i class="fa-solid fa-house" id="i"></i>
+
+                    <li><a href="#">Home</a></li>
+
+                    <i class="fa-solid fa-fire" id="i"></i>
+
+                    <li><a href="#">Trading</a></li>
+
+                    <i class="fa-solid fa-circle-info" id="i"></i>
+
+                    <li><a href="#">Explore</a></li>
+
+                    <i class="fa-solid fa-tv" id="i"></i>
+
+                    <li><a href="#">Movie</a></li>
+
+                    <i class="fa-solid fa-heart" id="i"></i>
+
+                    <li><a href="#">Favorito</a></li>
+                </ul>
+
+            </div>
+
+
+            <!-- BUSQUEDA -->
+
+            <div class="container-input">
+
+                <input type="text" placeholder="Buscar" id="buscador">
+
+                <div id="most">
+
+                    <!-- TODAS LAS LISTA DE LAS PELICULAS -->
+
+                    <ul id="lista">
+                        <li class="peliculas"><a href="#">Spiderman The Amazing</a><img src="img/amzing.jpg" class="images"></li>
+                        <li class="peliculas"><a href="#">Batman</a><img src="img/batman.jpg" class="images"></li>
+                        <li class="peliculas"><a href="#">Barbie</a><img src="img/barbie.jpg" class="images"></li>
+                        <li class="peliculas"><a href="#">Mario Bros</a><img src="img/mario.jpg" class="images"></li>
+                        <li class="peliculas"><a href="#">Superman vs Batman</a><img src="img/superman.jpg" class="images"></li>
+                        <li class="peliculas"><a href="#">Rapido y Furioso</a><img src="img/furioso.jpg" class="images"></li>
+                        <li class="peliculas"><a href="#">Transforme</a><img src="img/transforme.jpg" class="images"></li>
+                        <li class="peliculas"><a href="#">Titanic</a><img src="img/titanic.jpg" class="images"></li>
+                        <li class="peliculas"><a href="#">Terremoto</a><img src="img/terremoto.jpg" class="images"></li>
+                        <li class="peliculas"><a href="#">Avenger</a><img src="img/avenger.jpg" class="images"></li>
+                        <li class="peliculas"><a href="#">Siempre a Tu Lado</a><img src="img/hachi.jpg" class="images"></li>
+                        <li class="peliculas"><a href="#">Venom</a><img src="img/venom.jpg" class="images"></li>
+                        
+
+                    </ul>
+
+                </div>
+
+
+                <div class="btn">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PAGINA PRINCIPAL  DE LOS MENU CON LA IMAGEN DE SPIDERMAN-->
+
+            <div class="container">
+
+                <h2>Net<span>Flix</span></h2> 
+
+
+                <div class="portada">
+
+                    <img src="portada/spiderman1.jpg" alt="" class="spid">
+
+                    <div class="title">
+
+                        <h1>Spiderman</h1>
+
+                        <p>En uno de los planos finales de 'Spider-Man. Lejos de casa', se advierte, en el fondo del encuadre, un chiste, guiño, cariño de Kevin Fiege y los suyos a los fans del Marvel Cinematic Universe (MCU).</p>
+
+                    </div>
+
+                    <!-- BOTONES -->
+
+                    <button class="boton" onclick="btn__play()"><i class="fa-solid fa-play" id="play"></i> <b class="b">Play</b></button>
+                    <button class="boton2">My List</button>
+
+
+                    <div id="container__mostrar__video"></div>
+                </div>
+
+
+                <!-- AUTORES DE LA PELICULAS DE SPIDERMAN -->
+
+                <div class="container__cast">
+
+                    <h1 class="cast">Cast</h1>
+
+                    <div class="container__autor">
+                           
+                            <img src="autores/tom holland.jpg">
+                            <h3>Tom holland</h3> 
+                            <h4>Peter Parker</h4>
+                                  
+                    </div>
+
+                    <div class="container__autor">
+                           
+                            <img src="autores/zendaya.jpg">
+                            <h3>Zendaya</h3>      
+                            <h4>Michelle Jones</h4> 
+                    </div>
+
+
+                    <div class="container__autor">
+                           
+                            <img src="autores/benedict.jpg">
+                            <h3>Benedict</h3>
+                            <h4>Dr. Stephen Strange </h4>       
+                    </div>
+
+
+                    <div class="container__autor">
+                           
+                            <img src="autores/jacob batalon.jpg">
+                            <h3>Jacob Batalon</h3>
+                            <h4>Ned Leeds</h4>   
+                            
+                              
+                    </div>
+                
+                </div>
+            
+            </div>
+
+        </div>
+
+
+    
+    <!-- <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script> -->
+    <script src="buscar.js"></script>
+    
+</body>
+</html>
